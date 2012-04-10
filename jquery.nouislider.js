@@ -142,7 +142,7 @@
 											$(document).bind('mousemove.noUiSlider', function(f){
 
 												var knobCorrection=parseInt(knob.css('width'));
-												var flattened = f.pageX-(knob.data('offSet'));
+												var flattened = f.pageX-(knob.parent().offset().left);
 											
 												/* lower knob */
 											
